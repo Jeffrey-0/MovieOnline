@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
+<jsp:include page="head_bar.jsp"></jsp:include>
 <head>
     <title>视频详情</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -52,13 +53,19 @@
         .context_bottom{
             width: 100%;
         }
-
+        html, body {
+            height: 100%;
+        }
+        iframe{
+            height: 100%;
+            width: 100%;
+        }
 
     </style>
 
 </head>
 <body>
-<jsp:include page="head_bar.jsp"></jsp:include>
+
 <%--<iframe src="head_bar.jsp" width="100%" height="260px" scrolling="no" ></iframe>--%>
 <div>
     <div class="context">
@@ -70,7 +77,7 @@
 
 
             <div class="Image ad" style="height:600px;margin-top: 20px;margin-bottom: 20px;">
-                <iframe :src="Resource.code" class="video" width="89%" height="600px" scrolling="no" allowfullscreen="true" allowtransparency="true"></iframe>
+                <iframe :src="Resource.code" class="video" width="100%" height="600px" scrolling="no" allowfullscreen="true" allowtransparency="true"></iframe>
 
             </div>
             <div style="width: 100%;font-size:18px;
