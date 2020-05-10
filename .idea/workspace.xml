@@ -262,7 +262,7 @@
       <workItem from="1588985392670" duration="8015000" />
       <workItem from="1589030608320" duration="6142000" />
       <workItem from="1589078445403" duration="427000" />
-      <workItem from="1589079256800" duration="2280000" />
+      <workItem from="1589079256800" duration="2940000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1589031788461</created>
@@ -285,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589091607631</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update-workspace">
+      <created>1589091940528</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589091940528</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,14 +313,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="195" y="69" width="1089" height="755" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588989192973" />
-    <state x="0" y="13" width="1196" height="811" key="CommitChangelistDialog2" timestamp="1589091604085">
+    <state x="0" y="13" width="1196" height="811" key="CommitChangelistDialog2" timestamp="1589091931247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="13" width="1196" height="811" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589091604085" />
-    <state x="210" y="92" key="DiffContextDialog" timestamp="1589091497537">
+    <state x="0" y="13" width="1196" height="811" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589091931247" />
+    <state x="210" y="92" key="DiffContextDialog" timestamp="1589091971028">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="210" y="92" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1589091497537" />
+    <state x="210" y="92" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1589091971028" />
     <state x="417" y="154" key="FileChooserDialogImpl" timestamp="1589091783280">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -386,10 +393,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="221" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589091786546" />
-    <state x="465" y="189" key="Vcs.Push.Dialog.v2" timestamp="1589037271378">
+    <state x="465" y="189" key="Vcs.Push.Dialog.v2" timestamp="1589091987184">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="189" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589037271378" />
+    <state x="465" y="189" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589091987184" />
     <state x="537" y="226" key="git4idea.merge.GitPullDialog" timestamp="1589091614772">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
