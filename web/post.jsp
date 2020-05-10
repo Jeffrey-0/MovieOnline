@@ -158,7 +158,7 @@
 <body >
 <jsp:include page="head_bar.jsp"></jsp:include>
 <%--<iframe id="iframe" src="head_bar.jsp" width="100%" height="260px" ></iframe>--%>
-<div style="margin-top: -30px" >
+<div>
 	<div class="context">
 
 		<div  id="floors">

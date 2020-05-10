@@ -60,7 +60,7 @@
     <div id="resource_one" class="resource resource_one">
         <div class="title">
             <div>新番放送</div>
-            <a href="classily?search=新番放送&page=1" class="more" >查看更多</a></div>
+            <a href="classily?search=新番放送&page=1" class="more" ><i class="el-icon el-icon-arrow-right"></i></a></div>
         <div>
             <div class="resource_item" v-for="item in resourceList1" @click="handleClick(item)"><img
                     :data-src="item.img" onerror="javascript:this.src='img/default.jpg';" lazy src="img/loading.gif"></img>
@@ -71,7 +71,7 @@
     <div class="resource resource_one">
         <div class="title">
             <div>国产动漫</div>
-            <a href="classily?search=国产动漫&page=1" class="more">查看更多</a></div>
+            <a href="classily?search=国产动漫&page=1" class="more"><i class="el-icon el-icon-arrow-right"></i></a></div>
         <div>
             <div class="resource_item" v-for="item in resourceList2" @click="handleClick(item)"><img src="img/loading.gif"
                                                                                                      :data-src="item.img" onerror="javascript:this.src='img/default.jpg';" lazy ></img>
@@ -82,7 +82,7 @@
     <div class="resource resource_one">
         <div class="title">
             <div>剧场版</div>
-            <a href="classily?search=剧场动画&page=1" class="more">查看更多</a></div>
+            <a href="classily?search=剧场动画&page=1" class="more"><i class="el-icon el-icon-arrow-right"></i></a></div>
         <div>
             <div class="resource_item" v-for="item in resourceList3" @click="handleClick(item)"><img src="img/loading.gif"
                                                                                                      :data-src="item.img" onerror="javascript:this.src='img/default.jpg';" lazy ></img>
@@ -93,7 +93,7 @@
     <div class="resource resource_one">
         <div class="title">
             <div>电影</div>
-            <a href="classily?search=影视&page=1" class="more">查看更多</a></div>
+            <a href="classily?search=影视&page=1" class="more"><i class="el-icon el-icon-arrow-right"></i></a></div>
         <div>
             <div class="resource_item" v-for="item in resourceList4" @click="handleClick(item)"><img src="img/loading.gif"
                                                                                                      :data-src="item.img" onerror="javascript:this.src='img/default.jpg';" lazy ></img>
@@ -104,7 +104,7 @@
     <div class="resource resource_one">
         <div class="title">
             <div>用户分享</div>
-            <a href="classily?search=用户分享&page=1" class="more" >查看更多</a></div>
+            <a href="classily?search=用户分享&page=1" class="more" ><i class="el-icon el-icon-arrow-right"></i></a></div>
         <div>
             <div class="resource_item demo-image__lazy" v-for="item in resourceList5" @click="handleClick(item)">
                 <img src="img/loading.gif" :key="item.img"  :data-src="item.img" onerror="javascript:this.src='img/default.jpg';"></img>

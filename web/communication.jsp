@@ -66,7 +66,7 @@
 <%--<iframe id="iframe" src="head_bar.jsp" width="100%" height="260px" ></iframe>--%>
 <div>
     <div class="context">
-        <div  id="posts">
+        <div  id="posts" style="background:#ffffff">
 
             <!-- 			 <table class="post_item"> -->
             <%-- 				<c:forEach items="${list}" var="posting"> --%>

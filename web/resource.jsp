@@ -90,7 +90,7 @@
 
 				 border-bottom: black 1px solid">猜你喜欢</div>
             <div class="resource_item" v-for="item in resourceList" @click="handleClick(item)">
-                <img :src="item.img"  class="resource_pic">
+                <img :src="item.img"  class="resource_pic" onerror="javascript:this.src='img/default.jpg';">
                 <div class="right">
                     <div  class="resource_title">{{item.name}}</div>
                     <div class="resource_time">{{item.date}}</div>

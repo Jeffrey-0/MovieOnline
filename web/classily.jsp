@@ -18,7 +18,7 @@
     <div class="context">
         <div class="context_left" id="resources" >
             <div class="resource_item" v-for="item in resourceList" @click="handleClick(item)">
-                <div class="resource_pic"><img :src="item.img" style="object-fit: cover;"></div>
+                <div class="resource_pic"><img :src="item.img" style="object-fit: cover;" onerror="javascript:this.src='img/default.jpg';"></div>
                 <div class="resource_title" style="width: 88%;display: inline-block">{{item.name}}</div>
             </div>
             <div class="block" style="margin-bottom: 20px;">

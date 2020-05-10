@@ -75,7 +75,7 @@
 
             <div class="delete" @click="deleteClick(item)"></div>
             <div class="resource_title" style="display: inline-block;width: 85%">{{item.name}}</div>
-            <div class="resource_pic" @click="handleClick(item)"  style="height: 260px"><img :src="item.img" style="height: 260px"></div>
+            <div class="resource_pic" @click="handleClick(item)"  style="height: 260px"><img :src="item.img" style="height: 260px" onerror="javascript:this.src='img/default.jpg';"></div>
 
 
 
