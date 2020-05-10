@@ -11,7 +11,7 @@
 	<script src="js/vue.js"></script>
 	<script src="js/element_ui_index.js"></script>
 <%--	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">--%>
-	<link rel="stylesheet" href="css/element_ui_lib_index.css">
+<%--	<link rel="stylesheet" href="css/element_ui_lib_index.css">--%>
 	<style type="text/css">
 
 		#post{
@@ -156,7 +156,8 @@
 	</style>
 </head>
 <body >
-<iframe id="iframe" src="head_bar.jsp" width="100%" height="260px" ></iframe>
+<jsp:include page="head_bar.jsp"></jsp:include>
+<%--<iframe id="iframe" src="head_bar.jsp" width="100%" height="260px" ></iframe>--%>
 <div style="margin-top: -30px" >
 	<div class="context">
 
@@ -256,7 +257,8 @@
 
 	</div>
 </div>
-<iframe src="bottom_bar.jsp" width="100%" height="auto" ></iframe>
+<jsp:include page="bottom_bar.jsp"></jsp:include>
+<%--<iframe src="bottom_bar.jsp" width="100%" height="auto" ></iframe>--%>
 </body>
 
 <script type="text/javascript">

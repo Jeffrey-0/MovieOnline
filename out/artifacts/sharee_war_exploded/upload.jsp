@@ -9,7 +9,7 @@
     <script src="js/vue.js"></script>
     <script src="js/element_ui_index.js"></script>
 <%--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">--%>
-    <link rel="stylesheet" href="css/element_ui_lib_index.css">
+<%--    <link rel="stylesheet" href="css/element_ui_lib_index.css">--%>
     <style type="text/css">
         #layout {
             margin-top: -40px;
@@ -113,7 +113,8 @@
 
 </head>
 <body>
-<iframe src="head_bar.jsp" width="100%" height="260px" scrolling="no"></iframe>
+<jsp:include page="head_bar.jsp"></jsp:include>
+<%--<iframe src="head_bar.jsp" width="100%" height="260px" scrolling="no"></iframe>--%>
 <div class="upload_title">分享视频</div>
 <div class="layout">
     <form action="/upload" method="post" enctype="multipart/form-data">
@@ -133,7 +134,8 @@
         <input type="submit" style="width: 87%;margin-top: 20px;">
     </form>
 </div>
-<iframe src="bottom_bar.jsp" width="100%" height="auto"></iframe>
+<%--<iframe src="bottom_bar.jsp" width="100%" height="auto"></iframe>--%>
+<jsp:include page="bottom_bar.jsp"></jsp:include>
 </body>
 <script>
     //在页面显示上次的图片

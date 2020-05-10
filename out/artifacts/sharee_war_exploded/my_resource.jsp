@@ -9,7 +9,7 @@
     <script src="js/vue.js"></script>
     <script src="js/element_ui_index.js"></script>
 <%--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">--%>
-    <link rel="stylesheet" href="css/element_ui_lib_index.css">
+<%--    <link rel="stylesheet" href="css/element_ui_lib_index.css">--%>
     <link rel="stylesheet" type="text/css" href="css/classily.css">
 
 
@@ -63,7 +63,8 @@
 
 </head>
 <body>
-<iframe src="head_bar.jsp" width="100%" height="260px" scrolling="no"></iframe>
+<jsp:include page="head_bar.jsp"></jsp:include>
+<%--<iframe src="head_bar.jsp" width="100%" height="260px" scrolling="no"></iframe>--%>
 
 
 <div class="upload_title" >我的资源</div>
@@ -94,8 +95,8 @@
 
 
 
-
-<iframe src="bottom_bar.jsp" width="100%" height="auto" scrolling="no"></iframe>
+<jsp:include page="bottom_bar.jsp"></jsp:include>
+<%--<iframe src="bottom_bar.jsp" width="100%" height="auto" scrolling="no"></iframe>--%>
 
 
 </body>

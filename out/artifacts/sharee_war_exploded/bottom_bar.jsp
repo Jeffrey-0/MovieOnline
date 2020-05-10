@@ -34,9 +34,8 @@
 
  <div style="border-top: #aaa 1px solid;text-align:center" >
      <div class="friend_a">友情链接：</div>
-     <a target="_parent" href="http://www.bimibimi.tv/">M站</a>
+     <a target="_parent" href="http://www.bimibimi.tv/">哔咪哔咪</a>
      <a target="_parent" href="https://www.bilibili.com/">哔哩哔哩</a>
-     <a target="_parent" href="http://www.dilidili.one/">DiliDili</a>
      <a target="_parent" href="https://www.58dm.com/">58动漫网</a>
  </div>
  <div class="explain">本网站视频来自各大网站或用户自行上传，如果有侵犯版权的资源或存在违规操作用户请发送邮箱至666666666@qq.com，我们会在24小时之内处理</div>

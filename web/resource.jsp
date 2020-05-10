@@ -9,7 +9,7 @@
     <script src="js/vue.js"></script>
     <script src="js/element_ui_index.js"></script>
 <%--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">--%>
-    <link rel="stylesheet" href="css/element_ui_lib_index.css">
+<%--    <link rel="stylesheet" href="css/element_ui_lib_index.css">--%>
     <style type="text/css">
         .context{
             height: auto;
@@ -58,8 +58,9 @@
 
 </head>
 <body>
-<iframe src="head_bar.jsp" width="100%" height="260px" scrolling="no" ></iframe>
-<div style="margin-top: -30px">
+<jsp:include page="head_bar.jsp"></jsp:include>
+<%--<iframe src="head_bar.jsp" width="100%" height="260px" scrolling="no" ></iframe>--%>
+<div>
     <div class="context">
         <div class="context_left" id="resource">
             <!-- <a class="download" :href="Resource.code"  :download="Resource.code"></a> -->
@@ -91,7 +92,8 @@
         </div>
     </div>
 </div>
-<iframe src="bottom_bar.jsp" width="100%" height="auto" scrolling="no"></iframe>
+<jsp:include page="bottom_bar.jsp"></jsp:include>
+<%--<iframe src="bottom_bar.jsp" width="100%" height="auto" scrolling="no"></iframe>--%>
 
 </body>
 <script type="text/javascript">
