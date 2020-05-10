@@ -24,7 +24,7 @@
             text-align: center;
             line-height: 40px;
             font-size: 20px;
-            margin-top: -20px;
+            /*margin-top: -20px;*/
 
         }
 

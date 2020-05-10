@@ -80,7 +80,8 @@
 
 
         </div>
-        <div class="block" style="margin-bottom: 20px;">
+        <div class="block" style="margin-bottom: 20px;" v-if="resourceList.length">
+
             <el-pagination
                     background
                     layout="prev, pager, next"

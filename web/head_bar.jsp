@@ -34,7 +34,7 @@
             </ul>
             <ul class="top_right">
                 <li><a target="_parent" href="Communication">论坛</a></li>
-                <c:if test="${loginUser.speak==1}">
+                <c:if test="${loginUser.name!=null}">
                     <li><a target="_parent" href="classily?page=1&flag=3">我的视频</a></li>
                 </c:if>
             </ul>

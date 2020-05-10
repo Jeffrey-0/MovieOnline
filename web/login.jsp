@@ -46,6 +46,11 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+		<style>
+		.row-mt-15em{
+			margin-top: 5em;
+		}
+	</style>
 
 	</head>
 	<body>
@@ -72,11 +77,38 @@
 							<div class="form-wrap">
 								<div class="tab">
 									<ul class="tab-menu">
-										<li class="active gtco-first"><a href="#" data-tab="signup">Sign up</a></li>
-										<li class="gtco-second"><a href="#" data-tab="login">Login</a></li>
+										<li class=" active gtco-first"><a href="#" data-tab="login">Login</a></li>
+										<li class=" gtco-second"><a href="#" data-tab="signup">Sign up</a></li>
+
 									</ul>
+
 									<div class="tab-content">
-										<div class="tab-content-inner active" data-content="signup">
+										<div class="tab-content-inner active" data-content="login">
+											<form action="UserLoginServlet" method="post">
+												<div class="row form-group">
+													<div class="col-md-12">
+														<label for="id">id</label>
+														<input type="text" class="form-control" name="id">
+													</div>
+												</div>
+												<div class="row form-group">
+													<div class="col-md-12">
+														<label for="password">Password</label>
+														<input type="password" class="form-control" name="password">
+													</div>
+												</div>
+
+												<div class="row form-group">
+													<div class="col-md-12">
+														<input type="submit" class="btn btn-primary" value="Login">
+														<%--														<input type="text" class="btn btn-primary" value="Login">--%>
+														<a href="forget.jsp" class="btn btn-primary" style="display: inline-block;margin-left: 50px;color:#FFFFFF" value="Forget">Forget</a>
+
+													</div>
+												</div>
+											</form>
+										</div>
+										<div class="tab-content-inner" data-content="signup">
 											<form action="UserRegisterServlet" method="post">
 												<div class="row form-group">
 													<div class="col-md-12">
@@ -124,50 +156,7 @@
 											</form>	
 										</div>
 
-										<div class="tab-content-inner" data-content="login">
-											<form action="UserLoginServlet" method="post">
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="username">Username</label>
-														<input type="text" class="form-control" name="id">
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="password">Password</label>
-														<input type="password" class="form-control" name="password">
-													</div>
-												</div>
 
-												<div class="row form-group">
-													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary" value="Login">
-<%--														<input type="text" class="btn btn-primary" value="Login">--%>
-														<a href="forget.jsp" class="btn btn-primary" style="display: inline-block;margin-left: 50px;color:#FFFFFF" value="Forget">Forget</a>
-<%--														<li>--%>
-<%--															<a href="forget.jsp">Forget</a>--%>
-
-<%--														</li>--%>
-
-													</div>
-												</div>
-
-
-
-
-											</form>
-<%--											<div class="row form-group">--%>
-<%--												<div class="col-md-12">--%>
-<%--&lt;%&ndash;													<input type="button" class="btn btn-primary" value="Forget">&ndash;%&gt;--%>
-<%--													<a herf="forget.jsp"><input type=button onclick="window.location.href('连接')"></a>--%>
-<%--	--%>
-<%--												</div>--%>
-<%--											</div>--%>
-
-
-
-
-										</div>
 
 									</div>
 								</div>

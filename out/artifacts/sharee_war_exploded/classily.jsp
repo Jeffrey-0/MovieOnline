@@ -92,5 +92,24 @@
         // 设置当前的页数
         resources.currentPage=page;
     });
+
+
+    // 预加载下一页
+    $(document).ready(function () {
+        if( page < pages) {
+            var nextHref = "classily?search="+classily+"&page="+(page+1)+"&flag="+0;
+            var link = '<link rel="prefetch" href="' + nextHref + '">';
+            $('head').append(link);
+            var pageNumbers = $(".number");
+            for (var i = 0; i < pageNumbers.length ; i++) {
+                if (pageNumbers[i].innerText - 1 === page ) {
+                    pageNumbers.eq(i).css('color', '#409EFF');
+                    break;
+                }
+            }
+        }
+    })
+
+
 </script>
 </html>

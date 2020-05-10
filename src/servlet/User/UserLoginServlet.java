@@ -30,7 +30,12 @@ public class UserLoginServlet extends HttpServlet {
 		String id = request.getParameter("id");
 		String password = request.getParameter("password");
 		UserDao userDao = new UserDaoImpl();
-		User user = userDao.queryByIdAndPwd(Integer.parseInt(id), password);
+		User user = null;
+		try{
+			user = userDao.queryByIdAndPwd(Integer.parseInt(id), password);
+		}catch( Exception e){
+
+		}
 		if(user!=null) {
 			request.getSession().setAttribute("username", user.getName());
 			request.getSession().setAttribute("userId", user.getId());
