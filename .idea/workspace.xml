@@ -8,38 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="650d7457-a66a-4c2f-933b-3d4d028b8dd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/css/fonts/element-icons2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/css/fonts/element-icons2.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/fonts/element-icons2.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/fonts/element-icons2.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/bottom_bar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/bottom_bar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/classily.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/classily.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/communication.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/communication.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/css/element_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/css/element_index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/css/element_ui_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/css/element_ui_index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/css/fonts/element-icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/css/fonts/element-icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/css/fonts/element-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/css/fonts/element-icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/head_bar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/head_bar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/my_resource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/my_resource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/post.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/post.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/resource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/resource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/upload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sharee_war_exploded/upload.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sharee.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sharee.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/classily.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/classily.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/communication.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/communication.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/element_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/element_index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/element_ui_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/element_ui_index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/fonts/element-icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/fonts/element-icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/fonts/element-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/fonts/element-icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/head_bar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/head_bar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/my_resource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/my_resource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/post.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/post.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/upload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/upload.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +282,7 @@
       <workItem from="1589089055693" duration="902000" />
       <workItem from="1589090053556" duration="283000" />
       <workItem from="1589090350420" duration="476000" />
-      <workItem from="1589090842983" duration="302000" />
+      <workItem from="1589090842983" duration="1572000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1589031788461</created>
@@ -329,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589038194279</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update-include&amp;icon">
+      <created>1589091181250</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589091181251</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +314,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="test-bottom" />
-    <option name="LAST_COMMIT_MESSAGE" value="test-bottom" />
+    <MESSAGE value="update-include&amp;icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="update-include&amp;icon" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#Notifications" timestamp="1589038848729">
@@ -357,14 +334,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="478" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1589090261201" />
-    <state x="0" y="13" key="CommitChangelistDialog2" timestamp="1589038192789">
+    <state x="0" y="13" key="CommitChangelistDialog2" timestamp="1589091180156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589038192789" />
-    <state x="147" y="71" key="DiffContextDialog" timestamp="1589038134334">
+    <state x="0" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589091180156" />
+    <state x="147" y="71" key="DiffContextDialog" timestamp="1589092711430">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="71" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1589038134334" />
+    <state x="147" y="71" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1589092711430" />
     <state x="139" y="142" key="FileChooserDialogImpl" timestamp="1589037358239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -421,13 +398,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="221" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589037490737" />
-    <state x="465" y="189" key="Vcs.Push.Dialog.v2" timestamp="1589038825021">
+    <state x="465" y="189" key="Vcs.Push.Dialog.v2" timestamp="1589091198679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="189" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589038825021" />
-    <state x="479" y="215" key="git4idea.merge.GitPullDialog" timestamp="1589038783038">
+    <state x="465" y="189" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589091198679" />
+    <state x="479" y="215" key="git4idea.merge.GitPullDialog" timestamp="1589092667416">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="479" y="215" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1589038783038" />
+    <state x="479" y="215" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1589092667416" />
   </component>
 </project>
