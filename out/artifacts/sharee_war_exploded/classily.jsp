@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="css/element_ui_index.css">
     <script src="js/vue.js"></script>
     <script src="js/element_ui_index.js"></script>
-    <link rel="stylesheet" href="css/element_ui_lib_index.css">
+<%--    <link rel="stylesheet" href="css/element_ui_lib_index.css">--%>
 
 </head>
 <body >
-<iframe id="iframe" src="head_bar.jsp" width="100%" height="260px" scrolling="no" ></iframe>
-<div style="margin-top: -30px" >
+<jsp:include page="head_bar.jsp"></jsp:include>
+<%--<iframe id="iframe" src="head_bar.jsp" width="100%" height="260px" scrolling="no" ></iframe>--%>
+<div>
     <div class="context">
         <div class="context_left" id="resources" >
             <div class="resource_item" v-for="item in resourceList" @click="handleClick(item)">
@@ -33,7 +34,8 @@
         </div>
     </div>
 </div>
-<iframe src="bottom_bar.jsp" width="100%" height="auto"  scrolling="no" ></iframe>
+<%--<iframe src="bottom_bar.jsp" width="100%" height="auto"  scrolling="no" ></iframe>--%>
+<jsp:include page="bottom_bar.jsp"></jsp:include>
 </body>
 
 <script type="text/javascript">

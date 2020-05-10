@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/element_ui_index.css">
     <script src="js/vue.js"></script>
     <script src="js/element_ui_index.js"></script>
-    <link rel="stylesheet" href="css/element_ui_lib_index.css">
+<%--    <link rel="stylesheet" href="css/element_ui_lib_index.css">--%>
     <style type="text/css">
 
         #posts{
@@ -62,8 +62,9 @@
     </style>
 </head>
 <body >
-<iframe id="iframe" src="head_bar.jsp" width="100%" height="260px" ></iframe>
-<div style="margin-top: -30px" >
+<jsp:include page="head_bar.jsp"></jsp:include>
+<%--<iframe id="iframe" src="head_bar.jsp" width="100%" height="260px" ></iframe>--%>
+<div>
     <div class="context">
         <div  id="posts">
 
@@ -115,8 +116,10 @@
         </div>
     </div>
 </div>
-<iframe src="bottom_bar.jsp" width="100%" height="auto" ></iframe>
+<jsp:include page="bottom_bar.jsp"></jsp:include>
+<%--<iframe src="bottom_bar.jsp" width="100%" height="auto" ></iframe>--%>
 </body>
+
 
 <script type="text/javascript">
     //设置获取的数据（以下默认数据，应该赋值servlet传入的数据${传入的数据名称}）
