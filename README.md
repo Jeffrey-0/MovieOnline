@@ -10,7 +10,7 @@
 
 ## 运行效果
 
-![img](/Web/img/M站效果图.gif)
+![img](https://github.com/Jeffrey-0/MovieOnline/blob/master/web/img/M站效果图.gif?raw=true)
 
 ## 功能模块
 
