@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>导航头</title>
+<%--    <title>导航头</title>--%>
     <link rel="stylesheet" type="text/css" href="css/head_bar.css">
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 
