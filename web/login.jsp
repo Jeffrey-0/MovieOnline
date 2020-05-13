@@ -102,9 +102,9 @@
 
 												<div class="row form-group">
 													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary col-xs-5" value="Login">
+														<input type="submit" class="btn btn-primary col-sm-5" value="Login">
 														<%--														<input type="text" class="btn btn-primary" value="Login">--%>
-														<a href="forget.jsp" class="btn btn-primary col-xs-5 col-xs-push-2" style="display: inline-block;color:#FFFFFF" value="Forget">Forget</a>
+														<a href="forget.jsp" class="btn btn-primary col-sm-5 col-sm-push-2" style="display: inline-block;color:#FFFFFF" value="Forget">Forget</a>
 
 													</div>
 												</div>
