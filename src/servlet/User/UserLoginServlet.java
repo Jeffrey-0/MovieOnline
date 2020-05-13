@@ -44,16 +44,27 @@ public class UserLoginServlet extends HttpServlet {
 			return;
 		}
 		else {
-			try {
-				   PrintWriter out = response.getWriter();
-				   String a = URLEncoder.encode("账号或密码不正确!", "UTF-8"); 
-			   out.print("<script language='javascript'>alert(decodeURIComponent('"+a+"'));window.location.href='login.jsp?method=sindex';</script>");
-				   out.flush();
-				   out.close();
-				  } catch (IOException e) {
-				   e.printStackTrace();
-				  }
-			response.sendRedirect(request.getContextPath()+"/login.jsp");
+//			try {
+//				   PrintWriter out = response.getWriter();
+//				   String a = URLEncoder.encode("账号或密码不正确!", "UTF-8");
+//			   out.print("<script type=\"text/javascript\">\n" +
+//					   "     Swal.fire({\n" +
+//					   "      type:\"error\",\n" +
+//					   "      title:\"账号或密码错误\",\n" +
+//					   "      confirmButtonColor:\"#007bff\",\n" +
+//					   "      confirmButtonText:\"确认\"\n" +
+//					   "    })\n" +
+//					   "  ;top.location='login.jsp'; </script>");
+//				   out.flush();
+//				   out.close();
+//				  } catch (IOException e) {
+//				   e.printStackTrace();
+//				  }
+
+			request.setAttribute("error", "1");
+			request.setAttribute("username", id);
+//			response.sendRedirect(request.getContextPath()+"/login.jsp");
+			request.getRequestDispatcher("login.jsp").forward(request, response);
 		}
 	}
 
