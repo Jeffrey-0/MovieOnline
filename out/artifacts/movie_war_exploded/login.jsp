@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+=======
+>>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -88,8 +91,13 @@
 											<form action="UserLoginServlet" method="post">
 												<div class="row form-group">
 													<div class="col-md-12">
+<<<<<<< HEAD
 														<label for="number">number</label>
 														<input type="text" class="form-control" name="number">
+=======
+														<label for="id">Number</label>
+														<input type="text" class="form-control" name="id">
+>>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 													</div>
 												</div>
 												<div class="row form-group">
@@ -126,7 +134,11 @@
 												</div>
 												<div class="row form-group">
 													<div class="col-md-12">
+<<<<<<< HEAD
 														<label >Number</label>
+=======
+														<label >Phonenumber</label>
+>>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 														<input type="text" class="form-control" name="Phonenumber">
 													</div>
 												</div>
@@ -142,12 +154,15 @@
 														<input type="password" class="form-control" name="password2">
 													</div>
 												</div>
+<<<<<<< HEAD
                                                 <div class="row form-group">
                                                     <div class="col-md-12">
                                                         <label for="backPassTip">Back Password Tip</label>
                                                         <input type="text" class="form-control" name="backPassTip">
                                                     </div>
                                                 </div>
+=======
+>>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 
 												<div class="row form-group">
 													<div class="col-md-12">
@@ -156,9 +171,12 @@
 												</div>
 											</form>	
 										</div>
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 									</div>
 								</div>
 							</div>

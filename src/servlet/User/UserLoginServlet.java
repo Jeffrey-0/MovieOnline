@@ -27,13 +27,21 @@ public class UserLoginServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType ("text/html;charset=UTF-8");
 		request.setCharacterEncoding("UTF-8");
+<<<<<<< HEAD
 		response.setCharacterEncoding("UTF-8");
 		String number = request.getParameter("number");
+=======
+		String id = request.getParameter("id");
+>>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 		String password = request.getParameter("password");
 		UserDao userDao = new UserDaoImpl();
 		User user = null;
 		try{
+<<<<<<< HEAD
 			user = userDao.queryByIdAndPwd(number, password);
+=======
+			user = userDao.queryByIdAndPwd(Integer.parseInt(id), password);
+>>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 		}catch( Exception e){
 
 		}
@@ -45,6 +53,7 @@ public class UserLoginServlet extends HttpServlet {
 			return;
 		}
 		else {
+<<<<<<< HEAD
 			try {
 				   PrintWriter out = response.getWriter();
 				   String a = URLEncoder.encode("账号或密码不正确!", "UTF-8"); 
@@ -55,6 +64,29 @@ public class UserLoginServlet extends HttpServlet {
 				   e.printStackTrace();
 				  }
 			response.sendRedirect(request.getContextPath()+"/login.jsp");
+=======
+//			try {
+//				   PrintWriter out = response.getWriter();
+//				   String a = URLEncoder.encode("账号或密码不正确!", "UTF-8");
+//			   out.print("<script type=\"text/javascript\">\n" +
+//					   "     Swal.fire({\n" +
+//					   "      type:\"error\",\n" +
+//					   "      title:\"账号或密码错误\",\n" +
+//					   "      confirmButtonColor:\"#007bff\",\n" +
+//					   "      confirmButtonText:\"确认\"\n" +
+//					   "    })\n" +
+//					   "  ;top.location='login.jsp'; </script>");
+//				   out.flush();
+//				   out.close();
+//				  } catch (IOException e) {
+//				   e.printStackTrace();
+//				  }
+
+			request.setAttribute("error", "1");
+			request.setAttribute("username", id);
+//			response.sendRedirect(request.getContextPath()+"/login.jsp");
+			request.getRequestDispatcher("login.jsp").forward(request, response);
+>>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 		}
 	}
 
