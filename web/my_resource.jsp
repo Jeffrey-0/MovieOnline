@@ -121,14 +121,14 @@
         }
         ,
         methods:{
-            handleClick(item) {
+            handleClick: function(item) {
                 console.log(item.id);
                 console.log(item.category);
                 // 设置最新资源中某个资源的详细页面，携带资源id参数
                 var link = "resource?id=" + item.id + "&classily=" + item.category;
                 window.parent.location.href = link;
             },
-            deleteClick(item)
+            deleteClick: function(item)
             {
                 console.log(item.id);
                 // 设置某个资源的删除，携带资源id参数
@@ -137,7 +137,7 @@
             },
 
 
-            handleCurrentChange(val) {
+            handleCurrentChange: function(val) {
                 console.log(`当前页: ${val}`);
                 // 设置页码的跳转路径，携带点击的页码数
                 var link ="myRes?page="+val+"&flag="+${flag};

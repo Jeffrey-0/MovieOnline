@@ -55,15 +55,15 @@
             TotalPage: pages*10
         },
         methods:{
-            handleClick(item) {
+            handleClick: function(item) {
                 console.log(item.id);
                 console.log(item.category);
                 var link = "resource?id="+item.id+"&classily="+item.category+"&flag="+${flag};
                 window.parent.location.href=link;
             },
 
-            handleCurrentChange(val) {
-                console.log(`当前页: ${val}`);
+            handleCurrentChange: function(val) {
+                <%--console.log(`当前页: ${val}`);--%>
                 // 设置页码的跳转路径，携带种类参数和点击的页码数
                 var link ="classily?search="+classily+"&page="+val+"&flag="+${flag};
                 window.parent.location.href=link;

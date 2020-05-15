@@ -57,25 +57,50 @@
             <c:if test="${loginUser.speak==1}">
                 <div class="upload"><a target="_parent" href="upload.jsp">分享视频</a></div>
             </c:if>
-
-
-
         </div>
     </div>
     <div>
         <div>
             <div id="type_bar" style="margin-bottom: 0px;margin-top: 30px;">
-                <el-tabs v-model="activeName" type="card" @tab-click="handleClick">
-                    <el-tab-pane label="全部" name="全部">全部</el-tab-pane>
-                    <el-tab-pane label="新番放送" name="新番放送">新番放送</el-tab-pane>
-                    <el-tab-pane label="日本动漫" name="日本动漫">日本动漫</el-tab-pane>
-                    <el-tab-pane label="国产动漫" name="国产动漫">国产动漫</el-tab-pane>
-                    <el-tab-pane label="剧场动画" name="剧场动画">剧场动画</el-tab-pane>
-                    <el-tab-pane label="用户分享" name="用户分享">用户分享</el-tab-pane>
-                </el-tabs>
+<%--                <el-tabs v-model="activeName" type="card" @tab-click="handleClick">--%>
+<%--                    <el-tab-pane label="全部" name="全部">全部</el-tab-pane>--%>
+<%--                    <el-tab-pane label="新番放送" name="新番放送">新番放送</el-tab-pane>--%>
+<%--                    <el-tab-pane label="日本动漫" name="日本动漫">日本动漫</el-tab-pane>--%>
+<%--                    <el-tab-pane label="国产动漫" name="国产动漫">国产动漫</el-tab-pane>--%>
+<%--                    <el-tab-pane label="剧场动画" name="剧场动画">剧场动画</el-tab-pane>--%>
+<%--                    <el-tab-pane label="用户分享" name="用户分享">用户分享</el-tab-pane>--%>
+<%--                </el-tabs>--%>
+                <div class="el-tabs el-tabs--card el-tabs--top">
+                    <div class="el-tabs__header is-top">
+                        <div class="el-tabs__nav-wrap is-top">
+                            <div class="el-tabs__nav-scroll">
+                                <div role="tablist" class="el-tabs__nav is-top" style="transform: translateX(0px);">
+                                    <a href="classily?search=全部&page=1&flag=2">
+                                        <div id="tab-全部" aria-controls="全部" role="tab" tabindex="-1" class="el-tabs__item is-top">全部</div>
+                                    </a>
+                                    <a href="classily?search=新番放送&page=1&flag=2">
+                                        <div id="tab-新番放送" aria-controls="新番放送" role="tab" tabindex="-1" class="el-tabs__item is-top">新番放送</div>
+                                    </a>
+                                    <a href="classily?search=日本动漫&page=1&flag=2">
+                                        <div id="tab-日本动漫" aria-controls="日本动漫" role="tab" tabindex="-1" class="el-tabs__item is-top">日本动漫</div>
+                                    </a>
+                                    <a href="classily?search=国产动漫&page=1&flag=2">
+                                        <div id="tab-国产动漫" aria-controls="国产动漫" role="tab" tabindex="-1" class="el-tabs__item is-top">国产动漫</div>
+                                    </a>
+                                    <a href="classily?search=剧场动画&page=1&flag=2">
+                                        <div id="tab-剧场动画" aria-controls="剧场动画" role="tab" tabindex="-1" class="el-tabs__item is-top">剧场动画</div>
+                                    </a>
+                                    <a href="classily?search=用户分享&page=1&flag=2">
+                                        <div id="tab-用户分享" aria-controls="用户分享" role="tab" tabindex="-1" class="el-tabs__item is-top">用户分享</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
-</body>
 
 
 <script type="module">
@@ -96,6 +121,11 @@
         if (!classily) classily = "none";
         vm.activeName = classily;
         // 根据获取的种类参数，显示分类导航栏中的该种分类
+        $(".el-tabs__nav>div").click( function(){
+            console.log(this.innerText)
+            var link = "classily?search=" + this.innerText+"&page=1"+"&flag=2";
+            window.parent.location.href = link;
+        });
     });
 
     new Vue({
@@ -104,7 +134,7 @@
             return {input: ''}
         },
         methods: {
-            handleClick() {
+            handleClick : function() {
                 // 搜索的跳转路径，携带搜索的内容
                 var link = "classily?search=" + this.input+"&page=1"+"&flag=1";
                 window.parent.location.href = link;
@@ -117,9 +147,10 @@
             activeName: 'all'
         },
         methods: {
-            handleClick(tab, event) {
-                console.log(this.activeName);
+            handleClick : function(tab, event) {
+                // console.log(this.activeName);
                 // 设置分类导航栏的跳转路径，携带分类的参数
+                console.log(1)
                 var link = "classily?search=" + this.activeName+"&page=1"+"&flag=2";
                 window.parent.location.href = link;
             }
@@ -128,4 +159,6 @@
     })
 
 </script>
+
+</body>
 </html>

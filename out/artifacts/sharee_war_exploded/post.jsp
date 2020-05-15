@@ -300,7 +300,7 @@
 		},
 		methods:{
 			// 设置点击回复的点击事件
-			handleClick(index) {
+			handleClick: function(index) {
 				console.log(index);
 				if($(".floor_comments").eq(index).css("display")=="none")
 				{
@@ -310,18 +310,18 @@
 					$(".floor_comments").eq(index).css("display","none");
 			},
 
-			handleCurrentChange(val) {
-				console.log(`当前页: ${val}`);
+			handleCurrentChange: function(val) {
+				<%--console.log(`当前页: ${val}`);--%>
 				// 设置页码的跳转路径，携带点击的页码数
 				var link ="post.html?post_id="+this.cur_post.PostId+"&page="+val;
 				window.parent.location.href=link;
 			},
-			login(){
+			login: function(){
 				var link ="login.jsp";
 				window.parent.location.href=link;
 			},
 
-			onSubmit(item,index){
+			onSubmit: function(item,index){
 				// 	var link ="PinglunServlet?post_id="+this.cur_post.post_id+"&floor_id="+item.post_stprey_id+"&content="+this.Content+"&post_from_name="+this.item.post_from_name+"&post_from_uid="+this.item.post_from_uid;
 				var link ="PinglunServlet?post_id="+this.cur_post.post_id+"&floor_id="+item.post_stprey_id+"&content="+this.Content[index];
 				window.parent.location.href=link;
@@ -341,13 +341,13 @@
 			cur_post:post
 		},
 		methods:{
-			onSubmit() {
+			onSubmit: function() {
 
 				// 设置评论的参数（未传递楼层参数则要创建新楼层）
 				var link ="gailouServlet?post_id="+this.cur_post.post_id+"&content="+this.Content;
 				window.parent.location.href=link;
 			},
-			login(){
+			login: function(){
 				var link ="login.jsp";
 				window.parent.location.href=link;
 			}

@@ -122,7 +122,7 @@
             resourceList:similar_resources
         },
         methods: {
-            handleClick(item) {
+            handleClick: function(item) {
                 console.log(item.id);
                 console.log(item.category);
                 var link = "resource?id="+item.id+"&classily="+item.category;

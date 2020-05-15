@@ -156,15 +156,15 @@
             TotalPage: pages
         },
         methods:{
-            handleClick(item) {
+            handleClick: function(item) {
                 console.log(item.post_id);
                 // 设置某个帖子的详细页面，携带帖子id参数
                 var link = "PostServlet?id="+item.post_id;
                 window.parent.location.href=link;
             },												//把帖子数目传到post.html
 
-            handleCurrentChange(val) {
-                console.log(`当前页: ${val}`);
+            handleCurrentChange: function(val) {
+                <%--console.log(`当前页: ${val}`);--%>
                 // 设置页码的跳转路径，携带点击的页码数
                 var link ="communi?page="+val;
                 window.parent.location.href=link;
@@ -180,7 +180,7 @@
             Content:""
         },
         methods:{
-            onSubmit() {
+            onSubmit: function() {
 
                 // 设置某个帖子的详细页面，携带帖子id参数
                 var link = "PostContent?Content="+this.Content;

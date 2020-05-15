@@ -140,7 +140,7 @@
         }
         ,
         methods: {
-            handleClick(item) {
+            handleClick : function(item) {
                 console.log(item.id);
                 console.log(item.category);
                 var link = "resource?id=" + item.id + "&classily=" + item.category;
@@ -160,7 +160,7 @@
             resourceList5: resource_five,
 
         }, methods: {
-            handleClick(item) {
+            handleClick : function(item) {
                 console.log(item.id);
                 console.log(item.category);
                 // 设置某个资源的详细页面，携带资源id参数
@@ -176,7 +176,7 @@
         data: {
             resourceList: new_resources
         }, methods: {
-            handleClick(item) {
+            handleClick : function(item) {
                 console.log(item.id);
                 console.log(item.category);
                 // 设置最新资源中某个资源的详细页面，携带资源id参数
@@ -194,7 +194,7 @@
         data: {
             resourceList: hot_resources
         }, methods: {
-            handleClick(item) {
+            handleClick: function(item) {
                 console.log(item.id);
                 console.log(item.category);
                 // 设置热门资源中某个资源的详细页面，携带资源id参数
