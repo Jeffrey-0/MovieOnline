@@ -1,3 +1,6 @@
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -47,7 +50,11 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
     <!--test2-->
-
+    <style>
+        .row-mt-15em{
+            margin-top: 5em;
+        }
+    </style>
 </head>
 <body>
 
@@ -81,12 +88,17 @@
                                                 <form action="ForgetServlet" method="post">
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
-                                                            <label for="id">Phone number</label>
+
+                                                            <label for="id">Number</label>
                                                             <input type="text" class="form-control" name="number">
                                                         </div>
                                                     </div>
-
-
+                                                    <div class="row form-group">
+                                                        <div class="col-md-12">
+                                                            <label for="backPassTip">backPassTip</label>
+                                                            <input type="text" class="form-control" name="backPassTip">
+                                                        </div>
+                                                    </div>
 
                                                     <div class="row form-group">
                                                         <div class="col-md-12">

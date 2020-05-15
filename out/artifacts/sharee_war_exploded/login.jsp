@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -42,6 +43,8 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<script type="text/javascript" src="js/sweetalert2.all.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -87,8 +90,10 @@
 											<form action="UserLoginServlet" method="post">
 												<div class="row form-group">
 													<div class="col-md-12">
-														<label for="id">id</label>
-														<input type="text" class="form-control" name="id">
+
+														<label for="number">number</label>
+														<input type="text" class="form-control" name="number" ${number}>
+
 													</div>
 												</div>
 												<div class="row form-group">
@@ -100,9 +105,13 @@
 
 												<div class="row form-group">
 													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary" value="Login">
+<%--										<input type="submit" class="btn btn-primary" value="Login">--%>
+<%--														&lt;%&ndash;														<input type="text" class="btn btn-primary" value="Login">&ndash;%&gt;--%>
+<%--														<a href="forget.jsp" class="btn btn-primary" style="display: inline-block;margin-left: 50px;color:#FFFFFF" value="Forget">Forget</a>--%>
+<%--														=======--%>
+														<input type="submit" class="btn btn-primary col-sm-5" value="Login">
 														<%--														<input type="text" class="btn btn-primary" value="Login">--%>
-														<a href="forget.jsp" class="btn btn-primary" style="display: inline-block;margin-left: 50px;color:#FFFFFF" value="Forget">Forget</a>
+														<a href="forget.jsp" class="btn btn-primary col-sm-5 col-sm-push-2" style="display: inline-block;color:#FFFFFF" value="Forget">Forget</a>
 
 													</div>
 												</div>
@@ -112,12 +121,7 @@
 											<form action="UserRegisterServlet" method="post">
 												<div class="row form-group">
 													<div class="col-md-12">
-														<label for="id">id</label>
-														<input type="text" class="form-control" name="id">
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
+
 														<label >UserName</label>
 														<input type="text" class="form-control" name="username">
 													</div>
@@ -131,7 +135,9 @@
 												</div>
 												<div class="row form-group">
 													<div class="col-md-12">
-														<label >Phonenumber</label>
+
+														<label >Number</label>
+
 														<input type="text" class="form-control" name="Phonenumber">
 													</div>
 												</div>
@@ -148,9 +154,19 @@
 													</div>
 												</div>
 
+                                                <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                        <label for="backPassTip">Back Password Tip</label>
+                                                        <input type="text" class="form-control" name="backPassTip">
+                                                    </div>
+                                                </div>
+
+
+
 												<div class="row form-group">
 													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary" value="Sign up">
+														<input type="submit" class="btn btn-primary col-sm-12" value="Sign up">
+
 													</div>
 												</div>
 											</form>	
@@ -195,6 +211,17 @@
 	<script src="assets2/js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="assets2/js/main.js"></script>
+
+	<script type="text/javascript">
+		if(${error == 1})
+		Swal.fire({
+			type:"error",
+			title:"账号或密码错误",
+			confirmButtonColor:"#007bff",
+			confirmButtonText:"确认"
+		})
+	</script>
+
 
 	</body>
 </html>

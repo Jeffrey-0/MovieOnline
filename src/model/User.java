@@ -8,7 +8,7 @@ public class User {
 	private String speak;
 	private String password;
 	private String Phonenumber;
-<<<<<<< HEAD
+
 	private String backPassTip;
 
 	public String getBackPassTip() {
@@ -18,8 +18,7 @@ public class User {
 	public void setBackPassTip(String backPassTip) {
 		this.backPassTip = backPassTip;
 	}
-=======
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
+
 
 	public String getPhonenumber() {
 		return Phonenumber;
@@ -91,13 +90,4 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-<<<<<<< HEAD
-
-
-=======
-	
-	
-	
-	
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 }

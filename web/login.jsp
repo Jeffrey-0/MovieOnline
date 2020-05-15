@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-=======
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -47,10 +43,8 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-<<<<<<< HEAD
-=======
+
 	<script type="text/javascript" src="js/sweetalert2.all.min.js"></script>
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -96,13 +90,10 @@
 											<form action="UserLoginServlet" method="post">
 												<div class="row form-group">
 													<div class="col-md-12">
-<<<<<<< HEAD
+
 														<label for="number">number</label>
-														<input type="text" class="form-control" name="number">
-=======
-														<label for="id">id</label>
-														<input type="text" class="form-control" name="id" value="${username}">
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
+														<input type="text" class="form-control" name="number" ${number}>
+
 													</div>
 												</div>
 												<div class="row form-group">
@@ -114,15 +105,13 @@
 
 												<div class="row form-group">
 													<div class="col-md-12">
-<<<<<<< HEAD
-														<input type="submit" class="btn btn-primary" value="Login">
-														<%--														<input type="text" class="btn btn-primary" value="Login">--%>
-														<a href="forget.jsp" class="btn btn-primary" style="display: inline-block;margin-left: 50px;color:#FFFFFF" value="Forget">Forget</a>
-=======
+<%--										<input type="submit" class="btn btn-primary" value="Login">--%>
+<%--														&lt;%&ndash;														<input type="text" class="btn btn-primary" value="Login">&ndash;%&gt;--%>
+<%--														<a href="forget.jsp" class="btn btn-primary" style="display: inline-block;margin-left: 50px;color:#FFFFFF" value="Forget">Forget</a>--%>
+<%--														=======--%>
 														<input type="submit" class="btn btn-primary col-sm-5" value="Login">
 														<%--														<input type="text" class="btn btn-primary" value="Login">--%>
 														<a href="forget.jsp" class="btn btn-primary col-sm-5 col-sm-push-2" style="display: inline-block;color:#FFFFFF" value="Forget">Forget</a>
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 
 													</div>
 												</div>
@@ -132,15 +121,7 @@
 											<form action="UserRegisterServlet" method="post">
 												<div class="row form-group">
 													<div class="col-md-12">
-<<<<<<< HEAD
-=======
-														<label for="id">id</label>
-														<input type="text" class="form-control" name="id">
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
+
 														<label >UserName</label>
 														<input type="text" class="form-control" name="username">
 													</div>
@@ -154,11 +135,9 @@
 												</div>
 												<div class="row form-group">
 													<div class="col-md-12">
-<<<<<<< HEAD
+
 														<label >Number</label>
-=======
-														<label >Phonenumber</label>
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
+
 														<input type="text" class="form-control" name="Phonenumber">
 													</div>
 												</div>
@@ -174,7 +153,7 @@
 														<input type="password" class="form-control" name="password2">
 													</div>
 												</div>
-<<<<<<< HEAD
+
                                                 <div class="row form-group">
                                                     <div class="col-md-12">
                                                         <label for="backPassTip">Back Password Tip</label>
@@ -182,15 +161,12 @@
                                                     </div>
                                                 </div>
 
-												<div class="row form-group">
-													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary" value="Sign up">
-=======
+
 
 												<div class="row form-group">
 													<div class="col-md-12">
 														<input type="submit" class="btn btn-primary col-sm-12" value="Sign up">
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
+
 													</div>
 												</div>
 											</form>	
@@ -235,8 +211,7 @@
 	<script src="assets2/js/magnific-popup-options.js"></script>
 	<!-- Main -->
 	<script src="assets2/js/main.js"></script>
-<<<<<<< HEAD
-=======
+
 	<script type="text/javascript">
 		if(${error == 1})
 		Swal.fire({
@@ -247,7 +222,6 @@
 		})
 	</script>
 
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
 
 	</body>
 </html>

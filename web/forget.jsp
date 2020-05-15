@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-=======
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -51,7 +50,11 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
     <!--test2-->
-
+    <style>
+        .row-mt-15em{
+            margin-top: 5em;
+        }
+    </style>
 </head>
 <body>
 
@@ -85,7 +88,7 @@
                                                 <form action="ForgetServlet" method="post">
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
-<<<<<<< HEAD
+
                                                             <label for="id">Number</label>
                                                             <input type="text" class="form-control" name="number">
                                                         </div>
@@ -96,15 +99,7 @@
                                                             <input type="text" class="form-control" name="backPassTip">
                                                         </div>
                                                     </div>
-=======
-                                                            <label for="id">Phone number</label>
-                                                            <input type="text" class="form-control" name="number">
-                                                        </div>
-                                                    </div>
 
-
-
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
                                                             <label for="password">Password</label>
@@ -117,10 +112,7 @@
                                                             <input type="password" class="form-control" name="password2">
                                                         </div>
                                                     </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> d852b529a1cbad2c21c853476357c70a875e5522
                                                     <div class="row form-group">
                                                         <div class="col-md-12">
                                                             <input type="submit" class="btn btn-primary" value="Update" style="width: 100%">
