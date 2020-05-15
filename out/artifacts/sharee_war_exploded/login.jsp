@@ -92,14 +92,14 @@
 													<div class="col-md-12">
 
 														<label for="number">number</label>
-														<input type="text" class="form-control" name="number" ${number}>
+														<input type="number" class="form-control" name="number" value="${number}" required>
 
 													</div>
 												</div>
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="password">Password</label>
-														<input type="password" class="form-control" name="password">
+														<input type="password" class="form-control" name="password" required>
 													</div>
 												</div>
 

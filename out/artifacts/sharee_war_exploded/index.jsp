@@ -70,6 +70,17 @@
     </div>
     <div class="resource resource_one">
         <div class="title">
+            <div>日本动漫</div>
+            <a href="classily?search=日本动漫&page=1" class="more"><i class="el-icon el-icon-arrow-right"></i></a></div>
+        <div>
+            <div class="resource_item" v-for="item in resourceList4" @click="handleClick(item)"><img src="img/loading.gif"
+                                                                                                     :data-src="item.img" onerror="javascript:this.src='img/default.jpg';" lazy ></img>
+                <div>{{item.name}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="resource resource_one">
+        <div class="title">
             <div>国产动漫</div>
             <a href="classily?search=国产动漫&page=1" class="more"><i class="el-icon el-icon-arrow-right"></i></a></div>
         <div>
@@ -90,17 +101,7 @@
             </div>
         </div>
     </div>
-    <div class="resource resource_one">
-        <div class="title">
-            <div>电影</div>
-            <a href="classily?search=影视&page=1" class="more"><i class="el-icon el-icon-arrow-right"></i></a></div>
-        <div>
-            <div class="resource_item" v-for="item in resourceList4" @click="handleClick(item)"><img src="img/loading.gif"
-                                                                                                     :data-src="item.img" onerror="javascript:this.src='img/default.jpg';" lazy ></img>
-                <div>{{item.name}}</div>
-            </div>
-        </div>
-    </div>
+
     <div class="resource resource_one">
         <div class="title">
             <div>用户分享</div>

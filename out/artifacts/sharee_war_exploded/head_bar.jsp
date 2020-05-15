@@ -68,9 +68,9 @@
                 <el-tabs v-model="activeName" type="card" @tab-click="handleClick">
                     <el-tab-pane label="全部" name="全部">全部</el-tab-pane>
                     <el-tab-pane label="新番放送" name="新番放送">新番放送</el-tab-pane>
+                    <el-tab-pane label="日本动漫" name="日本动漫">日本动漫</el-tab-pane>
                     <el-tab-pane label="国产动漫" name="国产动漫">国产动漫</el-tab-pane>
                     <el-tab-pane label="剧场动画" name="剧场动画">剧场动画</el-tab-pane>
-                    <el-tab-pane label="影视" name="影视">影视</el-tab-pane>
                     <el-tab-pane label="用户分享" name="用户分享">用户分享</el-tab-pane>
                 </el-tabs>
             </div>

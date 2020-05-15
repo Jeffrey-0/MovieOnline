@@ -31,7 +31,7 @@ public class IndexServlet extends HttpServlet {
         request.setAttribute("fanRes", rd.queryResIndexCategory("新番放送"));
         request.setAttribute("cnRes", rd.queryResIndexCategory("国产动漫"));
         request.setAttribute("theaterRes", rd.queryResIndexCategory("剧场动画"));
-        request.setAttribute("movieRes", rd.queryResIndexCategory("影视"));
+        request.setAttribute("movieRes", rd.queryResIndexCategory("日本动漫"));
         request.setAttribute("shareRes", rd.queryResIndexCategory("用户分享"));
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
