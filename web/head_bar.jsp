@@ -45,9 +45,11 @@
             <div><a href="index" class="logo" style="background-image: url(img/logo.png);" target="parent"></a>
             </div>
             <div style="margin-top: 15px;" id="search" class="search">
-                <el-input placeholder="请输入内容" v-model="input" class="input-with-select">
-                    <el-button slot="append" icon="el-icon-search" @click="handleClick"></el-button>
-                </el-input>
+<%--                <el-input placeholder="请输入内容" v-model="input" class="input-with-select">--%>
+<%--                    <el-button slot="append" icon="el-icon-search" @click="handleClick"></el-button>--%>
+<%--                </el-input>--%>
+                <div class="input-with-select el-input el-input-group el-input-group--append"><!----><input id="search_input" type="text" v-model="input" autocomplete="off" placeholder="请输入内容" class="el-input__inner"><!----><!----><div class="el-input-group__append"><button onclick="var link = 'classily?search=' + document.getElementById('search_input').value+'&page=1'+'&flag=1';
+                    window.parent.location.href = link;" type="button" class="el-button el-button--default"><!----><i class="el-icon-search"></i><!----></button></div><!----></div>
             </div>
 
             <c:if test="${loginUser.speak==null}">
@@ -127,7 +129,6 @@
             window.parent.location.href = link;
         });
     });
-
     new Vue({
         el: '#search',
         data: function () {
@@ -141,6 +142,12 @@
             }
         }
     })
+
+    function search_button() {
+        console.log(2)
+        var link = "classily?search=" + document.getElementById("#search_input").value+"&page=1"+"&flag=1";
+        window.parent.location.href = link;
+    }
     const vm = new Vue({
         el: '#type_bar',
         data: {
