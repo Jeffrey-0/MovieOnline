@@ -60,6 +60,27 @@
             height: 100%;
             width: 100%;
         }
+        .play_num{
+            min-height: 80px;
+            max-height: 200px;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+        .play_num a{
+            padding: 20px;
+            float: left;
+            font-size: 18px;
+            color: #0b0b0b;
+        }
+        .play_num a:hover{
+            color: #3a8ee6;
+            cursor: pointer;
+        }
+        .title{
+            margin-top: 10px;
+        }
+
+
 
     </style>
 
@@ -80,10 +101,13 @@
                 <iframe :src="Resource.code" class="video" width="100%" height="600px" scrolling="no" allowfullscreen="true" allowtransparency="true"></iframe>
 
             </div>
-            <div style="width: 100%;font-size:18px;
-
-                 border-bottom: black 1px solid">简介</div>
+            <div class="title">简介</div>
             <div class="Descn">{{Resource.descn}}</div>
+            <div class="title">分集</div>
+            <div class="play_num">
+                <a  v-for="index of Resource_num" @click="handleClick(index)" v-if="index<10">第0{{index}}集</a>
+                <a  v-for="index of Resource_num" @click="handleClick(index)" v-if="index>=10">第{{index}}集</a>
+            </div>
         </div>
         <div class="context_bottom" id="resource_new">
             <div style="width: 100%;font-size:18px;
@@ -107,13 +131,24 @@
     //设置获取的数据（以下默认数据，应该赋值servlet传入的数据${传入的数据名称}）
     var similar_resources = ${similarRes};
     var resource= ${res};
+    // 获取当前视频的总集数
+    <%-- var num = ${res.num};--%>
+    var num = 50;
     // 绑定查看的资源数据
     if (window != top)  top.location.href = location.href; //让iframe中的跳转转换成主页跳转
     const vm1=new Vue({
         el:'#resource',
         data:{
             Resource:resource,
+            Resource_num: num
         },
+        methods:{
+            //选集的跳转链接
+            handleClick: function(index) {
+                var link = "resource?id="+this.Resource.id+"&classily="+this.Resource.category+"&flag=0&num="+index;
+                window.parent.location.href=link;
+            }
+        }
     })
     // 绑定相似资源
     const new_vm1=new Vue({

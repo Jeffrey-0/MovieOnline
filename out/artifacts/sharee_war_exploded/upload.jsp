@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -90,7 +91,7 @@
             border: black 0px solid;
         }
 
-        input, textarea {
+        .layout input,.layout textarea {
             width: 85%;
             margin-left: 8%;
             font-size: 18px;

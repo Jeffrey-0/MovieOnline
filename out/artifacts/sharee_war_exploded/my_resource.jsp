@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/element_ui_index.css">
     <script src="js/vue.js"></script>
     <script src="js/element_ui_index.js"></script>
-<%--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">--%>
-<%--    <link rel="stylesheet" href="css/element_ui_lib_index.css">--%>
+    <%--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">--%>
+    <%--    <link rel="stylesheet" href="css/element_ui_lib_index.css">--%>
     <link rel="stylesheet" type="text/css" href="css/classily.css">
 
 
@@ -166,5 +166,3 @@
 </script>
 
 </html>
-
-
