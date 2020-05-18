@@ -19,7 +19,7 @@ public class ResTest {
     }
     @Test
     public void res(){
-        String res = rd.queryResById("63");
+        String res = rd.queryResById("63",1);
         System.out.println(res);
     }
     @Test

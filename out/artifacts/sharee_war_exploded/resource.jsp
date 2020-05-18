@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <jsp:include page="head_bar.jsp"></jsp:include>
@@ -9,8 +10,8 @@
     <link rel="stylesheet" href="css/element_ui_index.css">
     <script src="js/vue.js"></script>
     <script src="js/element_ui_index.js"></script>
-<%--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">--%>
-<%--    <link rel="stylesheet" href="css/element_ui_lib_index.css">--%>
+    <%--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">--%>
+    <%--    <link rel="stylesheet" href="css/element_ui_lib_index.css">--%>
     <style type="text/css">
         .context{
             height: auto;
@@ -133,14 +134,14 @@
     var resource= ${res};
     // 获取当前视频的总集数
     <%-- var num = ${res.num};--%>
-    var num = 50;
+    // var num = 1;
     // 绑定查看的资源数据
     if (window != top)  top.location.href = location.href; //让iframe中的跳转转换成主页跳转
     const vm1=new Vue({
         el:'#resource',
         data:{
             Resource:resource,
-            Resource_num: num
+            Resource_num: resource.num
         },
         methods:{
             //选集的跳转链接

@@ -11,10 +11,21 @@ public class Resource {
     private String uploader;
     private String level;
 
+    public Integer getNum() {
+        return num;
+    }
+
+    public void setNum(Integer num) {
+        this.num = num;
+    }
+
+    private Integer num;
+
     @Override
     public String toString() {
         return "Resource{" +
                 "id=" + id +
+                ", num='" + num +
                 ", name='" + name + '\'' +
                 ", category='" + category + '\'' +
                 ", descn='" + descn + '\'' +
@@ -45,7 +56,7 @@ public class Resource {
         this.level = level;
     }
 
-    public Resource(Integer id, String name, String category, String descn, String code, String img, String date, String uploader, String level) {
+    public Resource(Integer id, String name, String category, String descn, String code, String img, String date, String uploader, String level,Integer num) {
         this.name = name;
         this.id = id;
         this.category = category;
@@ -55,6 +66,7 @@ public class Resource {
         this.date = date;
         this.uploader = uploader;
         this.level = level;
+        this.num = num;
     }
 
     public String getName() {
